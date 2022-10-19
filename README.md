@@ -56,7 +56,8 @@ I wrote some DAX functions to split the Date column into its corresponding year,
 
 
 ## 4. REPORT DESIGN
-The layout for this report was created using Figma, a design tool that enables you to create designs for mobile and web interfaces as well as any other kind of design you can think of. After choosing the queries to be answered and the reports to use, several card designs were created for each viz and integrated into a single design. The figma icon plugin iconify is where all of the icons used in this report were acquired from. Accessible icons are utilized throughout. Color schemes and shades taken from Adobe.color.com. After putting everything together and making my background in Figma, I uploaded it to PowerBI; the png file can be downloaded here.
+The layout for this report was created using Figma, a design tool that enables you to create designs for mobile and web interfaces as well as any other kind of design you can think of. After choosing the queries to be answered and the reports to use, several card designs were created for each viz and integrated into a single design. The figma icon plugin iconify is where all of the icons used in this report were acquired from. Color schemes and shades were selected from adobe.color.com. After putting everything together and making my background in Figma, I uploaded it to PowerBI; the png file can be downloaded here. This is what the initial background looked like.
+
 
 Here is what the final report design looks like.
 
