@@ -45,13 +45,16 @@ The dataset was then cleaned with Python after being downloaded as a csv file to
 ## 3. DATA CLEANING & TRANSFORMATION
 Before being imported into PowerBI, the data was originally converted with Python using Jupyter Notebook.
 To carry out fundamental operations and EDA, four major Python libraries (pandas, numpy, matplotlib, and seaborn) were loaded.
-In order to start the transformation, Pandas was used to read the data from my local disk into Jupyter Notebook using the pd.read csv method. Now that the dataset had been accessed, we could see that the majority of the columns had empty values. The "Flight#" and "Registration" columns were not helpful for the questions I needed to answer, so I omitted them. The graphic below displays the proportion of empty cells in each of the columns.
+In order to start the transformation, Pandas was used to read the data from my local disk into Jupyter Notebook using the pd.read_csv method. Now that the dataset had been accessed, we could see that the majority of the columns had empty values. The "Flight#" and "Registration" columns were not helpful for the questions I needed to answer, so I omitted them. The graphic below displays the percentage of empty cells in each of the columns.
+![image](https://user-images.githubusercontent.com/112688755/196692152-9da52081-64ec-4b7b-9175-961c94023250.png)
+
 The empty fields in the other category columns, such as "Route," "Summary," "Operator," and "Type," were filled with, respectively, "Not Defined," "No Comments," "Unknown," and "No Type."
 RegEx was used to extract the 'Military' column and show 'TRUE & FALSE' for cells that contained the string military in them and cells that did not contain the string military, respectively, creating a new column called 'Is Military'. this was done to determine whether or not the ground deaths were caused by a military plane or operator.
 In certain instances, the 'Location' column had both states and countries. To establish a new column called "Location County," the countries were separated out using the split function.
 A straightforward subtraction was used to determine the number of survivors by deducting the fatalities from the total number of passengers, creating a new column labeled "Survived." There are now 20 blank cells in the Location column, and because we can still access the data for some of them via the Operator column, we filled those manually while choosing random locations from the 'Location Country' column for the other cells.
 The 'Aboard, Fatalities & Ground' columns' empty values were filled with the mean of the corresponding columns, and the 'cn/In' column's empty values were filled with the string 'Unidentified'
 Now, only the "Time" column had null values, and they were filled with the string "Time Unknown". The data is now tidy and ready for use, so it is once more saved to my local disk as a csv file.
+You can access the Python file used for data cleaning here.
 I wrote some DAX functions to split the Date column into its corresponding year, month, day, and weekday after importing the data into PowerBI.
 
 
@@ -66,4 +69,5 @@ And here is what the final report design looks like:
 
 ## 5. CONCLUSION
 My oga, Mr. Olanrewaju Oyinbooke, and his team deserve all the credit for making this project enjoyable to work on. If you want to reproduce, I hope my documentation is clear enough for you to comprehend it. You are welcome to change my scripts or designs to create something more beautiful. If you do, kindly mention me on Twitter by using the handle @superweirdpm. 🚀
+To view the report's complete functionality and User Experience, explore the [interactive version](https://app.powerbi.com/view?r=eyJrIjoiNDNmNWFhNTctNTNiNy00ZDExLTg4ZTItNjBkYjNjNGE5NDgwIiwidCI6ImYxMDIxMjliLTQwMjUtNDFlOC05ZDAyLThlMzRmNmE1ZjQyNCJ9).
 
