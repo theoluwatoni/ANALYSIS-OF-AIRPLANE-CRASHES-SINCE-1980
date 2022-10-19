@@ -57,9 +57,11 @@ I wrote some DAX functions to split the Date column into its corresponding year,
 
 ## 4. REPORT DESIGN
 The layout for this report was created using Figma, a design tool that enables you to create designs for mobile and web interfaces as well as any other kind of design you can think of. After choosing the queries to be answered and the reports to use, several card designs were created for each viz and integrated into a single design. The figma icon plugin iconify is where all of the icons used in this report were acquired from. Color schemes and shades were selected from adobe.color.com. After putting everything together and making my background in Figma, I uploaded it to PowerBI; the png file can be downloaded here. This is what the initial background looked like.
+![bg_pbi_airplaneData](https://user-images.githubusercontent.com/112688755/196686383-6da72afe-b050-4953-87b8-215ced4e4a76.png)
 
 
-Here is what the final report design looks like.
+And here is what the final report design looks like:
+![image](https://user-images.githubusercontent.com/112688755/196686184-e143d3d7-6485-4de3-88e1-73939c5df6cf.png)
 
 
 ## 5. CONCLUSION
