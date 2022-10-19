@@ -54,7 +54,7 @@ In certain instances, the 'Location' column had both states and countries. To es
 A straightforward subtraction was used to determine the number of survivors by deducting the fatalities from the total number of passengers, creating a new column labeled "Survived." There are now 20 blank cells in the Location column, and because we can still access the data for some of them via the Operator column, we filled those manually while choosing random locations from the 'Location Country' column for the other cells.
 The 'Aboard, Fatalities & Ground' columns' empty values were filled with the mean of the corresponding columns, and the 'cn/In' column's empty values were filled with the string 'Unidentified'
 Now, only the "Time" column had null values, and they were filled with the string "Time Unknown". The data is now tidy and ready for use, so it is once more saved to my local disk as a csv file.
-You can access the Python file used for data cleaning here.
+You can access the Python file used for data cleaning [here](https://github.com/theoluwatoni/ANALYSIS-OF-AIRPLANE-CRASHES-SINCE-1980/blob/main/Airplane%20Crashes%20Since%201980.ipynb).
 I wrote some DAX functions to split the Date column into its corresponding year, month, day, and weekday after importing the data into PowerBI.
 
 
